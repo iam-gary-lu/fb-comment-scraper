@@ -1,0 +1,34 @@
+queue:
+- name: debugQ
+  rate: 5/s
+  bucket_size: 5
+  max_concurrent_requests: 10
+    
+    
+- name: fbCommentsQ
+  rate: 10/s
+  bucket_size: 5
+  max_concurrent_requests: 10
+
+- name: fbPostQ
+  rate: 10/s
+  bucket_size: 5
+  max_concurrent_requests: 15
+
+- name: userClassifyQ
+  mode: pull
+
+- name: removeDupQ
+  rate: 10/s
+  bucket_size: 5
+  max_concurrent_requests: 5
+
+- name: postMaintQ
+  rate: 10/s
+  bucket_size: 5
+  max_concurrent_requests: 10
+
+
+
+
+  

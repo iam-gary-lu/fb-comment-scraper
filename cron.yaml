@@ -1,0 +1,10 @@
+cron:
+- description: "daily post scrape"
+  url: /cron/dailyposts
+  schedule: every 1 hours from 22:00 to 23:00
+
+- description: "daily comment scrape"
+  url: /cron/dailycomments
+  schedule: every 1 hours from 23:00 to 00:00
+
+

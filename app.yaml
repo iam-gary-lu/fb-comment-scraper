@@ -1,0 +1,63 @@
+
+runtime: python27
+api_version: 1
+threadsafe: true
+
+libraries:
+- name: webapp2
+  version: latest
+- name: jinja2
+  version: latest
+  
+  
+builtins:
+- deferred: on
+- appstats: on
+
+handlers:
+
+- url: /js
+  static_dir: js
+  
+- url: /css
+  static_dir: css  
+
+  
+- url: /upload
+  script: handlers.application
+    
+    
+- url: /reddit
+  script: handlers.application
+    
+- url: /update
+  script: handlers.application
+  
+- url: /getfbpost
+  script: handlers.application 
+  
+- url: /updateold
+  script: handlers.application
+  
+- url: /home
+  script: handlers.application
+    
+    
+- url: /_ah/queue/deferred
+  script: google.appengine.ext.deferred.deferred.application
+  login: admin
+
+- url: /cron/dailycomments
+  script: handlers.application
+
+- url: /cron/dailyposts
+  script: handlers.application
+
+- url: /cron/weeklycomments
+  script: handlers.application
+
+- url: /cron/monthlycomments
+  script: handlers.application
+
+- url: /.*
+  script: handlers.application

@@ -10,7 +10,7 @@ except ImportError:
 
 app_id = "<FILL IN>"
 app_secret = "<FILL IN>"  # DO NOT SHARE WITH ANYONE!
-group_id = "759985267390294"
+group_id = ""
 
 access_token = app_id + "|" + app_secret
 

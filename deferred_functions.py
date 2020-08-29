@@ -26,19 +26,19 @@ except ImportError:
 from datetime import datetime, timedelta, date
 
 
-nytimes_api_key = 'ae613b3310914075acb5c90aa963f419'
-nytimes_api_key_alt = '05ca2917e6314dc5a39bebb7cb804abc'
+nytimes_api_key = ''
+nytimes_api_key_alt = ''
 
-reddit_user_agent = 'python:insights_test:v1.0 (by /u/IcyAlpaca)'
-reddit_client_id = 'MUGwwaJb8LBOsQ'
-reddit_client_secret = 'JO4q1dFXfwGt4_jr0yApTvUyzpM'
+reddit_user_agent = ''
+reddit_client_id = ''
+reddit_client_secret = ''
 
-app_id = "1873785539536922"
-app_secret = "8a7ba43fa2277d8695a98d2988763fe2"  # DO NOT SHARE WITH ANYONE!
+app_id = ""
+app_secret = ""  
 fb_api_key = app_id + "|" + app_secret
 
-test_url = 'https://mville-insights-test.appspot.com'
-dev_url = 'http://localhost:8080'
+test_url = ''
+dev_url = ''
 
 def populate_classifyQ():
 	handlers.CL

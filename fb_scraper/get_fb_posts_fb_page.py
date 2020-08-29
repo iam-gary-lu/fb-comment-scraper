@@ -7,8 +7,8 @@ try:
 except ImportError:
     from urllib2 import urlopen, Request
 
-app_id = "1873785539536922"
-app_secret = "8a7ba43fa2277d8695a98d2988763fe2"  # DO NOT SHARE WITH ANYONE!
+app_id = ""
+app_secret = ""  # DO NOT SHARE WITH ANYONE!
 
 
 
